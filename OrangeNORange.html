@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:8080/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OrangeNORange</title>
+    <link rel="stylesheet" type="text/css" href="./OrangeNORange_files/styles.css">
+    <script src="./OrangeNORange_files/color-thief.umd.js"></script>
+    <script src="./OrangeNORange_files/axios.min.js"></script>
+    <script type="module" src="./OrangeNORange_files/script.js"></script>
+    <script type="module" src="./OrangeNORange_files/soundplayer.js"></script>
+</head>
+<body>
+    <div id="osts">
+        <img id="ost-toggle" src="./OrangeNORange_files/rounded-headphones.png">
+        <div id="ostContainer" class="hidden"> <!-- All website links are placeholders. Change later. -->
+            <img src="./OrangeNORange_files/f58978f175eba8065d1b5afe4545876d_original.png" id="songImage" alt="song image">
+            <p id="ost-name">No song playing.</p>
+            <img class="arrowButton-ost" id="arrowButton-2" src="./OrangeNORange_files/playArrow.png" alt="arrowbutton">
+            <img class="arrowButton-ost" id="pauseButton" src="./OrangeNORange_files/play_circle_FILL0_wght400_GRAD0_opsz24.svg" alt="arrowbutton">
+            <img class="arrowButton-ost" id="arrowButton-right" src="./OrangeNORange_files/playArrow.png" alt="arrowbutton">
+            <p id="ost-time">0:00 // 00:00</p>
+            <div id="ost-player">
+                <audio id="audio-html" src="./Osts/Children of the Ruins.mp3">
+                </audio>
+            </div>
+        </div>
+    </div>
+
+    <div id="main">
+        <div id="top-part"> <!-- CHANGE PFP FROM WEBSITE TO FILE -->
+            <img id="pfp" src="./OrangeNORange_files/pfp.png" alt="pfp">
+            <div id="text">
+                <p>Games I like</p>
+            </div>
+        </div>    
+            <div id="gamePics">
+               <!--<div class="game" id="placeholderLol">
+                    <image class="gamePictures" id="image" src="https://ksr-ugc.imgix.net/assets/011/533/904/f58978f175eba8065d1b5afe4545876d_original.png?ixlib=rb-4.1.0&crop=faces&w=1552&h=873&fit=crop&v=1463684109&auto=format&frame=1&q=92&s=11db7d50e2a3790bd8ad7ca0537eed92" alt="gameName">
+
+                    <p>undertale</p> -->
+               <div class="game" style="background-color: rgb(96, 56, 44);"><img class="gamePictures" src="./OrangeNORange_files/ar2dag.jpg"><p>Minecraft: Frozen</p></div><div class="game" style="background-color: rgb(74, 25, 54);"><img class="gamePictures" src="./OrangeNORange_files/arniy.jpg"><p>Danganronpa: Trigger Happy Havoc</p></div><div class="game" style="background-color: rgb(33, 39, 60);"><img class="gamePictures" src="./OrangeNORange_files/tvfbpcmuonwiugjcbc45.jpg"><p>Hollow Knight</p></div><div class="game" style="background-color: rgb(236, 225, 203);"><img class="gamePictures" src="./OrangeNORange_files/ar21zk.jpg"><p>Paper Mario: The Thousand-Year Door</p></div><div class="game" style="background-color: rgb(243, 206, 38);"><img class="gamePictures" src="./OrangeNORange_files/ar6yk.jpg"><p>Cuphead</p></div><div class="game" style="background-color: rgb(189, 203, 192);"><img class="gamePictures" src="./OrangeNORange_files/ar75x.jpg"><p>A Hat in Time</p></div><div class="game" style="background-color: rgb(92, 37, 163);"><img class="gamePictures" src="./OrangeNORange_files/ar1xkv.jpg"><p>Vivid/Stasis</p></div><div class="game" style="background-color: rgb(227, 201, 216);"><img class="gamePictures" src="./OrangeNORange_files/ar9am.jpg"><p>Doki Doki Literature Club Plus!</p></div><div class="game" style="background-color: rgb(10, 76, 113);"><img class="gamePictures" src="./OrangeNORange_files/ar5l8.jpg"><p>Stardew Valley</p></div><div class="game" style="background-color: rgb(31, 35, 39);"><img class="gamePictures" src="./OrangeNORange_files/ar6vi.jpg"><p>Oxenfree</p></div><div class="game" style="background-color: rgb(75, 79, 118);"><img class="gamePictures" src="./OrangeNORange_files/arujn.jpg"><p>Star Apprentice: Magical Murder Mystery</p></div><div class="game" style="background-color: rgb(139, 71, 140);"><img class="gamePictures" src="./OrangeNORange_files/ar1msn.jpg"><p>OneShot: World Machine Edition</p></div><div class="game" style="background-color: rgb(78, 77, 71);"><img class="gamePictures" src="./OrangeNORange_files/ar7u5.jpg"><p>Celeste</p></div><div class="game" style="background-color: rgb(34, 28, 35);"><img class="gamePictures" src="./OrangeNORange_files/ar4vc.jpg"><p>Undertale</p></div><div class="game" style="background-color: rgb(35, 34, 30);"><img class="gamePictures" src="./OrangeNORange_files/arfj2.jpg"><p>The Stanley Parable</p></div><div class="game" style="background-color: rgb(74, 90, 42);"><img class="gamePictures" src="./OrangeNORange_files/aro91.jpg"><p>The Henry Stickmin Collection</p></div><div class="game" style="background-color: rgb(238, 137, 53);"><img class="gamePictures" src="./OrangeNORange_files/arwbn.jpg"><p>Outcore: Desktop Adventure</p></div></div>
+            </div>
+        
+    
+
+    <!-- The video -->
+    <video autoplay="" muted="" loop="" id="GamesShowcase">
+        <source src="./OrangeNORange_files/GamesVid.mp4" type="video/mp4">
+    </video>
+
+</body></html>
